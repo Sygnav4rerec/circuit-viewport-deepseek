@@ -4,181 +4,320 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Circuit — A Semantic Sphere</title>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,500;1,300&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0a0c11; color: #ece4d3; font-family: 'IBM Plex Mono', monospace; overflow: hidden; }
-    #canvas-container { width: 100vw; height: 100vh; display: block; }
-    #title-block { position: absolute; top: 32px; left: 32px; pointer-events: none; }
-    #title-block h1 { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 500; margin-bottom: 4px; }
-    #title-block p { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8d8779; }
-    /* ── Scroll cue ── */
-#scroll-cue {
-  position: absolute;
-  bottom: 32px;
-  left: 32px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #d9a441;
-  text-decoration: none;
-  z-index: 10;
-  opacity: 0.8;
-}
-#scroll-cue:hover { opacity: 1; }
+    html { scroll-behavior: smooth; }
 
-/* ── Table section ── */
-#table-section {
-  min-height: 100vh;
-  background: #0a0c11;
-  padding: 100px 48px 120px;
-  border-top: 1px solid #242b38;
-}
+    body {
+      background: #0a0c11;
+      color: #ece4d3;
+      font-family: 'IBM Plex Mono', monospace;
+      overflow-x: hidden;
+    }
 
-.table-header {
-  max-width: 1100px;
-  margin: 0 auto 64px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #242b38;
-}
+    #canvas-container {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      overflow: hidden;
+    }
 
-.table-word {
-  font-family: 'Fraunces', serif;
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: -0.01em;
-  color: #ece4d3;
-  line-height: 1;
-  margin-bottom: 20px;
-}
+    #title-block {
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      pointer-events: none;
+      z-index: 10;
+    }
+    #title-block h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    #title-block p {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8d8779;
+    }
 
-.table-etym {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
-  color: #b8b2a3;
-  letter-spacing: 0.02em;
-  line-height: 1.7;
-  margin-bottom: 16px;
-}
-.table-etym em {
-  font-style: italic;
-  color: #d9a441;
-}
-.table-etym-detail {
-  display: block;
-  color: #8d8779;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  margin-top: 6px;
-}
+    #hint {
+      position: absolute;
+      bottom: 32px;
+      right: 32px;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8d8779;
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 10;
+    }
 
-.table-etym-full {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.75;
-  color: #8d8779;
-  max-width: 720px;
-}
+    #scroll-cue {
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #d9a441;
+      text-decoration: none;
+      z-index: 10;
+      opacity: 0.8;
+    }
+    #scroll-cue:hover { opacity: 1; }
 
-.table-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
+    /* ── Info panel ── */
+    #info-panel {
+      position: fixed;
+      top: 0; right: 0;
+      width: 400px;
+      max-width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      background: rgba(14, 17, 24, 0.97);
+      border-left: 1px solid #242b38;
+      padding: 32px 32px 48px;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+      z-index: 100;
+      backdrop-filter: blur(16px);
+    }
+    #info-panel.visible { transform: translateX(0); }
 
-.table-block {
-  background: #141821;
-  border: 1px solid #242b38;
-  border-radius: 2px;
-  padding: 24px 24px 20px;
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
-  position: relative;
-  overflow: hidden;
-  user-select: none;
-}
-.table-block:hover {
-  background: #1a1f2b;
-  transform: translateY(-2px);
-}
-.table-block.active {
-  background: #1a1f2b;
-  border-color: var(--anchor-color, #d9a441);
-  box-shadow: 0 0 20px -8px var(--anchor-color, #d9a441);
-}
+    #close-panel {
+      position: absolute;
+      top: 20px; right: 20px;
+      background: none;
+      border: none;
+      color: #8d8779;
+      font-size: 22px;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+      padding: 6px 10px;
+      line-height: 1;
+    }
+    #close-panel:hover { color: #d9a441; }
 
-.block-bar {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--anchor-color, #888);
-}
+    .info-symbol {
+      font-family: 'Fraunces', serif;
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .info-name {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .info-tagline {
+      font-size: 11px;
+      color: #8d8779;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .info-section-label {
+      font-size: 10px;
+      color: #d9a441;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-top: 24px;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px solid #1c222e;
+      font-size: 13px;
+      gap: 16px;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-label {
+      color: #8d8779;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+    .info-value {
+      color: #ece4d3;
+      text-align: right;
+      word-break: break-word;
+    }
+    .info-text {
+      color: #b8b2a3;
+      font-size: 14px;
+      line-height: 1.65;
+      font-family: 'Work Sans', sans-serif;
+    }
 
-.block-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 14px;
-  gap: 12px;
-}
+    /* ── Table section ── */
+    #table-section {
+      min-height: 100vh;
+      background: #0a0c11;
+      padding: 100px 48px 120px;
+      border-top: 1px solid #242b38;
+    }
 
-.block-label {
-  font-family: 'Fraunces', serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: #ece4d3;
-  line-height: 1.1;
-}
+    .table-header {
+      max-width: 1100px;
+      margin: 0 auto 64px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #242b38;
+    }
 
-.block-synset {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  color: #8d8779;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
-}
+    .table-word {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: -0.01em;
+      color: #ece4d3;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
 
-.block-def {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 13px;
-  line-height: 1.7;
-  color: #b8b2a3;
-  margin-bottom: 18px;
-  min-height: 3.4em;
-}
+    .table-etym {
+      font-size: 13px;
+      color: #b8b2a3;
+      letter-spacing: 0.02em;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .table-etym em {
+      font-style: italic;
+      color: #d9a441;
+    }
+    .table-etym-detail {
+      display: block;
+      color: #8d8779;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      margin-top: 6px;
+    }
 
-.block-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 14px;
-  border-top: 1px solid #242b38;
-}
+    .table-etym-full {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #8d8779;
+      max-width: 720px;
+    }
 
-.block-count {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  color: #8d8779;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+    .back-to-sphere {
+      display: inline-block;
+      margin-bottom: 32px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #d9a441;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+    .back-to-sphere:hover { opacity: 1; }
 
-@media (max-width: 700px) {
-  #table-section { padding: 60px 20px 80px; }
-  .table-word { font-size: 3rem; }
-  .table-grid { grid-template-columns: 1fr; }
-}
+    .table-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .table-block {
+      background: #141821;
+      border: 1px solid #242b38;
+      border-radius: 2px;
+      padding: 24px 24px 20px;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .table-block:hover {
+      background: #1a1f2b;
+      transform: translateY(-2px);
+    }
+    .table-block.active {
+      background: #1a1f2b;
+      border-color: var(--anchor-color, #d9a441);
+      box-shadow: 0 0 20px -8px var(--anchor-color, #d9a441);
+    }
+
+    .block-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--anchor-color, #888);
+    }
+
+    .block-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+      gap: 12px;
+    }
+
+    .block-label {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: #ece4d3;
+      line-height: 1.1;
+    }
+
+    .block-synset {
+      font-size: 10px;
+      color: #8d8779;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .block-def {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #b8b2a3;
+      margin-bottom: 18px;
+    }
+
+    .block-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid #242b38;
+    }
+
+    .block-count {
+      font-size: 10px;
+      color: #8d8779;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 700px) {
+      #table-section { padding: 60px 20px 80px; }
+      .table-word { font-size: 3rem; }
+      .table-grid { grid-template-columns: 1fr; }
+      #info-panel { width: 100%; }
+    }
   </style>
 </head>
 <body>
   <div id="canvas-container"></div>
 
   <div id="title-block">
-    <h1>Circuit</h1>
+    <h1><a href="#canvas-container" style="color:inherit;text-decoration:none;">Circuit</a></h1>
     <p>One word · Seven regions</p>
   </div>
 

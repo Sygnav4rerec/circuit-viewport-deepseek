@@ -72,7 +72,8 @@ export function renderTable(container, layout, graph) {
   // ── HEADER ──
   const header = document.createElement('header');
   header.className = 'table-header';
-  header.innerHTML = `
+   header.innerHTML = `
+    <a href="#canvas-container" class="back-to-sphere">↑ back to sphere</a>
     <div class="table-word">circuit</div>
     <div class="table-etym">
       From Latin <em>${ETYMOLOGY.latin}</em> — ${ETYMOLOGY.literal}
