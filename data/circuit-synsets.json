@@ -1,0 +1,179 @@
+{
+  "word": "circuit",
+  "pos": "noun",
+  "sense_count": 7,
+  "senses": [
+    {
+      "name": "circuit.n.01",
+      "pos": "n",
+      "definition": "an electrical device that provides a path for electrical current to flow",
+      "examples": [],
+      "lemmas": [
+        "circuit",
+        "electrical_circuit",
+        "electric_circuit"
+      ],
+      "hypernyms": [
+        "electrical_device.n.01"
+      ],
+      "hyponyms": [
+        "closed_circuit.n.01",
+        "flip-flop.n.03",
+        "tank_circuit.n.01",
+        "computer_circuit.n.01",
+        "delay_line.n.01",
+        "wiring.n.01",
+        "bridge.n.02",
+        "bridged-t.n.01",
+        "squelch_circuit.n.01",
+        "feedback_circuit.n.01",
+        "t-network.n.01",
+        "limiter.n.01",
+        "series_circuit.n.01",
+        "resonator.n.02",
+        "pulse_timing_circuit.n.01",
+        "open_circuit.n.01",
+        "link.n.09"
+      ],
+      "part_holonyms": [
+        "electronic_equipment.n.01"
+      ],
+      "part_meronyms": [
+        "shunt.n.02",
+        "resistor.n.01",
+        "choke.n.01",
+        "short_circuit.n.01",
+        "tube.n.02",
+        "relay.n.05",
+        "capacitor.n.01"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "tour.n.01",
+      "pos": "n",
+      "definition": "a journey or route all the way around a particular place or area",
+      "examples": [
+        "they took an extended tour of Europe",
+        "we took a quick circuit of the park",
+        "a ten-day coach circuit of the island"
+      ],
+      "lemmas": [
+        "tour",
+        "circuit"
+      ],
+      "hypernyms": [
+        "journey.n.01"
+      ],
+      "hyponyms": [
+        "package_tour.n.01",
+        "grand_tour.n.01",
+        "pub_crawl.n.01",
+        "itineration.n.01",
+        "walkabout.n.01",
+        "grand_tour.n.02",
+        "whistle-stop_tour.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "circuit.n.03",
+      "pos": "n",
+      "definition": "an established itinerary of venues or events that a particular group of people travel to",
+      "examples": [
+        "she's a familiar name on the club circuit",
+        "on the lecture circuit",
+        "the judge makes a circuit of the courts in his district",
+        "the international tennis circuit"
+      ],
+      "lemmas": [
+        "circuit"
+      ],
+      "hypernyms": [
+        "path.n.03"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "circumference.n.02",
+      "pos": "n",
+      "definition": "the boundary line encompassing an area or object",
+      "examples": [
+        "he had walked the full circumference of his land",
+        "a danger to all races over the whole circumference of the globe"
+      ],
+      "lemmas": [
+        "circumference",
+        "circuit"
+      ],
+      "hypernyms": [
+        "boundary_line.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "circuit.n.05",
+      "pos": "n",
+      "definition": "(law) a judicial division of a state or the United States (so-called because originally judges traveled and held court in different locations); one of the twelve groups of states in the United States that is covered by a particular circuit court of appeals",
+      "examples": [],
+      "lemmas": [
+        "circuit"
+      ],
+      "hypernyms": [
+        "group.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "racing_circuit.n.01",
+      "pos": "n",
+      "definition": "a racetrack for automobile races",
+      "examples": [],
+      "lemmas": [
+        "racing_circuit",
+        "circuit"
+      ],
+      "hypernyms": [
+        "racetrack.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "lap.n.05",
+      "pos": "n",
+      "definition": "movement once around a course",
+      "examples": [
+        "he drove an extra lap just for insurance"
+      ],
+      "lemmas": [
+        "lap",
+        "circle",
+        "circuit"
+      ],
+      "hypernyms": [
+        "locomotion.n.02"
+      ],
+      "hyponyms": [
+        "pace_lap.n.01",
+        "victory_lap.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    }
+  ]
+}

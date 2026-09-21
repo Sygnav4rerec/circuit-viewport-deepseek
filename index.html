@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circuit — A Semantic Sphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0c11; color: #ece4d3; font-family: 'IBM Plex Mono', monospace; overflow: hidden; }
+    #canvas-container { width: 100vw; height: 100vh; display: block; }
+    #title-block { position: absolute; top: 32px; left: 32px; pointer-events: none; }
+    #title-block h1 { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 500; margin-bottom: 4px; }
+    #title-block p { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8d8779; }
+    /* ── Scroll cue ── */
+#scroll-cue {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #d9a441;
+  text-decoration: none;
+  z-index: 10;
+  opacity: 0.8;
+}
+#scroll-cue:hover { opacity: 1; }
+
+/* ── Table section ── */
+#table-section {
+  min-height: 100vh;
+  background: #0a0c11;
+  padding: 100px 48px 120px;
+  border-top: 1px solid #242b38;
+}
+
+.table-header {
+  max-width: 1100px;
+  margin: 0 auto 64px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #242b38;
+}
+
+.table-word {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  color: #ece4d3;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.table-etym {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: #b8b2a3;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.table-etym em {
+  font-style: italic;
+  color: #d9a441;
+}
+.table-etym-detail {
+  display: block;
+  color: #8d8779;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  margin-top: 6px;
+}
+
+.table-etym-full {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #8d8779;
+  max-width: 720px;
+}
+
+.table-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.table-block {
+  background: #141821;
+  border: 1px solid #242b38;
+  border-radius: 2px;
+  padding: 24px 24px 20px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+.table-block:hover {
+  background: #1a1f2b;
+  transform: translateY(-2px);
+}
+.table-block.active {
+  background: #1a1f2b;
+  border-color: var(--anchor-color, #d9a441);
+  box-shadow: 0 0 20px -8px var(--anchor-color, #d9a441);
+}
+
+.block-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--anchor-color, #888);
+}
+
+.block-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+  gap: 12px;
+}
+
+.block-label {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ece4d3;
+  line-height: 1.1;
+}
+
+.block-synset {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #8d8779;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.block-def {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #b8b2a3;
+  margin-bottom: 18px;
+  min-height: 3.4em;
+}
+
+.block-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid #242b38;
+}
+
+.block-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #8d8779;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  #table-section { padding: 60px 20px 80px; }
+  .table-word { font-size: 3rem; }
+  .table-grid { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <div id="title-block">
+    <h1>Circuit</h1>
+    <p>One word · Seven regions</p>
+  </div>
+
+  <div id="hint">drag to rotate · scroll to zoom · click a node</div>
+
+  <a href="#table-section" id="scroll-cue">↓ the table</a>
+
+  <section id="table-section"></section>
+
+  <aside id="info-panel">
+    <button id="close-panel">×</button>
+    <div class="info-symbol" id="info-symbol">—</div>
+    <div class="info-name" id="info-name">—</div>
+    <div class="info-tagline" id="info-tagline">—</div>
+
+    <div class="info-section-label">Structure</div>
+    <div id="info-physical"></div>
+
+    <div class="info-section-label">Graph</div>
+    <div id="info-atomic"></div>
+
+    <div class="info-section-label">Definition</div>
+    <p class="info-text" id="info-description">—</p>
+
+    <div class="info-section-label">Related Words</div>
+    <p class="info-text" id="info-uses">—</p>
+
+    <div class="info-section-label">Position</div>
+    <div id="info-position"></div>
+  </aside>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

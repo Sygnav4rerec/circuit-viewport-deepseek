@@ -1,0 +1,1319 @@
+{
+  "word": "circuit",
+  "node_count": 48,
+  "edge_count": 41,
+  "circuit_senses": [
+    "lap.n.05",
+    "circuit.n.03",
+    "circumference.n.02",
+    "circuit.n.05",
+    "racing_circuit.n.01",
+    "tour.n.01",
+    "circuit.n.01"
+  ],
+  "nodes": [
+    {
+      "name": "circuit.n.01",
+      "pos": "n",
+      "definition": "an electrical device that provides a path for electrical current to flow",
+      "examples": [],
+      "lemmas": [
+        "circuit",
+        "electrical_circuit",
+        "electric_circuit"
+      ],
+      "hypernyms": [
+        "electrical_device.n.01"
+      ],
+      "hyponyms": [
+        "closed_circuit.n.01",
+        "flip-flop.n.03",
+        "tank_circuit.n.01",
+        "computer_circuit.n.01",
+        "delay_line.n.01",
+        "wiring.n.01",
+        "bridge.n.02",
+        "bridged-t.n.01",
+        "squelch_circuit.n.01",
+        "feedback_circuit.n.01",
+        "t-network.n.01",
+        "limiter.n.01",
+        "series_circuit.n.01",
+        "resonator.n.02",
+        "pulse_timing_circuit.n.01",
+        "open_circuit.n.01",
+        "link.n.09"
+      ],
+      "part_holonyms": [
+        "electronic_equipment.n.01"
+      ],
+      "part_meronyms": [
+        "shunt.n.02",
+        "resistor.n.01",
+        "choke.n.01",
+        "short_circuit.n.01",
+        "tube.n.02",
+        "relay.n.05",
+        "capacitor.n.01"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "tour.n.01",
+      "pos": "n",
+      "definition": "a journey or route all the way around a particular place or area",
+      "examples": [
+        "they took an extended tour of Europe",
+        "we took a quick circuit of the park",
+        "a ten-day coach circuit of the island"
+      ],
+      "lemmas": [
+        "tour",
+        "circuit"
+      ],
+      "hypernyms": [
+        "journey.n.01"
+      ],
+      "hyponyms": [
+        "package_tour.n.01",
+        "grand_tour.n.01",
+        "pub_crawl.n.01",
+        "itineration.n.01",
+        "walkabout.n.01",
+        "grand_tour.n.02",
+        "whistle-stop_tour.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "circuit.n.03",
+      "pos": "n",
+      "definition": "an established itinerary of venues or events that a particular group of people travel to",
+      "examples": [
+        "she's a familiar name on the club circuit",
+        "on the lecture circuit",
+        "the judge makes a circuit of the courts in his district",
+        "the international tennis circuit"
+      ],
+      "lemmas": [
+        "circuit"
+      ],
+      "hypernyms": [
+        "path.n.03"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "circumference.n.02",
+      "pos": "n",
+      "definition": "the boundary line encompassing an area or object",
+      "examples": [
+        "he had walked the full circumference of his land",
+        "a danger to all races over the whole circumference of the globe"
+      ],
+      "lemmas": [
+        "circumference",
+        "circuit"
+      ],
+      "hypernyms": [
+        "boundary_line.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "circuit.n.05",
+      "pos": "n",
+      "definition": "(law) a judicial division of a state or the United States (so-called because originally judges traveled and held court in different locations); one of the twelve groups of states in the United States that is covered by a particular circuit court of appeals",
+      "examples": [],
+      "lemmas": [
+        "circuit"
+      ],
+      "hypernyms": [
+        "group.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "racing_circuit.n.01",
+      "pos": "n",
+      "definition": "a racetrack for automobile races",
+      "examples": [],
+      "lemmas": [
+        "racing_circuit",
+        "circuit"
+      ],
+      "hypernyms": [
+        "racetrack.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "lap.n.05",
+      "pos": "n",
+      "definition": "movement once around a course",
+      "examples": [
+        "he drove an extra lap just for insurance"
+      ],
+      "lemmas": [
+        "lap",
+        "circle",
+        "circuit"
+      ],
+      "hypernyms": [
+        "locomotion.n.02"
+      ],
+      "hyponyms": [
+        "pace_lap.n.01",
+        "victory_lap.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "electrical_device.n.01",
+      "pos": "n",
+      "definition": "a device that produces or is powered by electricity",
+      "examples": [],
+      "lemmas": [
+        "electrical_device"
+      ],
+      "hypernyms": [
+        "device.n.01"
+      ],
+      "hyponyms": [
+        "spark_plug.n.01",
+        "transducer.n.01",
+        "fuse.n.01",
+        "spark_arrester.n.01",
+        "filter.n.02",
+        "distributor.n.04",
+        "control_panel.n.01",
+        "capacitor.n.01",
+        "resistor.n.01",
+        "plug.n.05",
+        "attenuator.n.01",
+        "zapper.n.01",
+        "transformer.n.01",
+        "brush.n.04",
+        "precipitator.n.01",
+        "battery.n.02",
+        "cell.n.03",
+        "flasher.n.02",
+        "antenna.n.01",
+        "jack.n.06",
+        "electrostatic_generator.n.01",
+        "security_system.n.02",
+        "ballast.n.05",
+        "inductor.n.01",
+        "segway.n.01",
+        "load.n.09",
+        "electrograph.n.02",
+        "rectifier.n.01",
+        "bimetallic_strip.n.01",
+        "relay.n.05",
+        "reactor.n.01",
+        "solar_array.n.01",
+        "circuit.n.01",
+        "transponder.n.01",
+        "suppressor.n.03"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [
+        "terminal.n.02"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "closed_circuit.n.01",
+      "pos": "n",
+      "definition": "a complete electrical circuit around which current flows or a signal circulates",
+      "examples": [],
+      "lemmas": [
+        "closed_circuit",
+        "loop"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [
+        "parallel_circuit.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "flip-flop.n.03",
+      "pos": "n",
+      "definition": "an electronic circuit that can assume either of two stable states",
+      "examples": [],
+      "lemmas": [
+        "flip-flop"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "tank_circuit.n.01",
+      "pos": "n",
+      "definition": "an oscillatory circuit",
+      "examples": [],
+      "lemmas": [
+        "tank_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "computer_circuit.n.01",
+      "pos": "n",
+      "definition": "a circuit that is part of a computer",
+      "examples": [],
+      "lemmas": [
+        "computer_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [
+        "integrated_circuit.n.01",
+        "gate.n.02",
+        "printed_circuit.n.01",
+        "module.n.03",
+        "interface.n.04"
+      ],
+      "part_holonyms": [
+        "computer.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "delay_line.n.01",
+      "pos": "n",
+      "definition": "a circuit designed to introduce a calculated delay into the transmission of a signal",
+      "examples": [],
+      "lemmas": [
+        "delay_line"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [
+        "electromagnetic_delay_line.n.01",
+        "acoustic_delay_line.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "wiring.n.01",
+      "pos": "n",
+      "definition": "a circuit of wires for the distribution of electricity",
+      "examples": [],
+      "lemmas": [
+        "wiring"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [
+        "light_circuit.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "bridge.n.02",
+      "pos": "n",
+      "definition": "a circuit consisting of two branches (4 arms arranged in a diamond configuration) across which a meter is connected",
+      "examples": [],
+      "lemmas": [
+        "bridge",
+        "bridge_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [
+        "wheatstone_bridge.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "bridged-t.n.01",
+      "pos": "n",
+      "definition": "a circuit consisting of a T-network with an additional shunt bridging the two series circuits",
+      "examples": [],
+      "lemmas": [
+        "bridged-T"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "squelch_circuit.n.01",
+      "pos": "n",
+      "definition": "an electric circuit that cuts off a receiver when the signal becomes weaker than the noise",
+      "examples": [],
+      "lemmas": [
+        "squelch_circuit",
+        "squelch",
+        "squelcher"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "feedback_circuit.n.01",
+      "pos": "n",
+      "definition": "a circuit that feeds back some of the output to the input of a system",
+      "examples": [],
+      "lemmas": [
+        "feedback_circuit",
+        "feedback_loop"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [
+        "control_circuit.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "t-network.n.01",
+      "pos": "n",
+      "definition": "a circuit formed by two equal series circuits with a shunt between them",
+      "examples": [],
+      "lemmas": [
+        "T-network"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "limiter.n.01",
+      "pos": "n",
+      "definition": "(electronics) a nonlinear electronic circuit whose output is limited in amplitude; used to limit the instantaneous amplitude of a waveform (to clip off the peaks of a waveform)",
+      "examples": [
+        "a limiter introduces amplitude distortion"
+      ],
+      "lemmas": [
+        "limiter",
+        "clipper"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "series_circuit.n.01",
+      "pos": "n",
+      "definition": "a circuit having its parts connected serially",
+      "examples": [],
+      "lemmas": [
+        "series_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "resonator.n.02",
+      "pos": "n",
+      "definition": "an electrical circuit that combines capacitance and inductance in such a way that a periodic electric oscillation will reach maximum amplitude",
+      "examples": [],
+      "lemmas": [
+        "resonator",
+        "resonant_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "pulse_timing_circuit.n.01",
+      "pos": "n",
+      "definition": "a circuit that times pulses",
+      "examples": [],
+      "lemmas": [
+        "pulse_timing_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "open_circuit.n.01",
+      "pos": "n",
+      "definition": "an incomplete electrical circuit in which no current flows",
+      "examples": [],
+      "lemmas": [
+        "open_circuit"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "link.n.09",
+      "pos": "n",
+      "definition": "an interconnecting circuit between two or more locations for the purpose of transmitting and receiving data",
+      "examples": [],
+      "lemmas": [
+        "link",
+        "data_link"
+      ],
+      "hypernyms": [
+        "circuit.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "electronic_equipment.n.01",
+      "pos": "n",
+      "definition": "equipment that involves the controlled conduction of electrons (especially in a gas or vacuum or semiconductor)",
+      "examples": [],
+      "lemmas": [
+        "electronic_equipment"
+      ],
+      "hypernyms": [
+        "equipment.n.01"
+      ],
+      "hyponyms": [
+        "central_processing_unit.n.01",
+        "mixer.n.03",
+        "circuitry.n.01",
+        "tape_player.n.01",
+        "telephone.n.01",
+        "oscilloscope.n.01",
+        "terminal.n.04",
+        "radio-phonograph.n.01",
+        "modem.n.01",
+        "audio_system.n.01",
+        "tape_deck.n.01",
+        "scrambler.n.03",
+        "detector.n.03",
+        "monitor.n.06",
+        "cassette_player.n.01",
+        "off-line_equipment.n.01",
+        "set.n.13",
+        "peripheral.n.01",
+        "equalizer.n.01",
+        "monitor.n.05",
+        "playback.n.02",
+        "television_equipment.n.01",
+        "cd_player.n.01",
+        "amplifier.n.01",
+        "lens.n.05"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [
+        "electrode.n.01",
+        "circuit.n.01"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "shunt.n.02",
+      "pos": "n",
+      "definition": "a conductor having low resistance in parallel with another device to divert a fraction of the current",
+      "examples": [],
+      "lemmas": [
+        "shunt",
+        "electrical_shunt",
+        "bypass"
+      ],
+      "hypernyms": [
+        "conductor.n.04"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [
+        "circuit.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "resistor.n.01",
+      "pos": "n",
+      "definition": "an electrical device that resists the flow of electrical current",
+      "examples": [],
+      "lemmas": [
+        "resistor",
+        "resistance"
+      ],
+      "hypernyms": [
+        "electrical_device.n.01"
+      ],
+      "hyponyms": [
+        "potential_divider.n.01",
+        "rheostat.n.01",
+        "ballast_resistor.n.01"
+      ],
+      "part_holonyms": [
+        "circuit.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "choke.n.01",
+      "pos": "n",
+      "definition": "a coil of low resistance and high inductance used in electrical circuits to pass direct current and attenuate alternating current",
+      "examples": [],
+      "lemmas": [
+        "choke",
+        "choke_coil",
+        "choking_coil"
+      ],
+      "hypernyms": [
+        "coil.n.06"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [
+        "circuit.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "short_circuit.n.01",
+      "pos": "n",
+      "definition": "accidental contact between two points in an electric circuit that have a potential difference",
+      "examples": [],
+      "lemmas": [
+        "short_circuit",
+        "short"
+      ],
+      "hypernyms": [
+        "contact.n.07"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [
+        "circuit.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "tube.n.02",
+      "pos": "n",
+      "definition": "electronic device consisting of a system of electrodes arranged in an evacuated glass or metal envelope",
+      "examples": [],
+      "lemmas": [
+        "tube",
+        "vacuum_tube",
+        "thermionic_vacuum_tube",
+        "thermionic_tube",
+        "electron_tube",
+        "thermionic_valve"
+      ],
+      "hypernyms": [
+        "electronic_device.n.01"
+      ],
+      "hyponyms": [
+        "electron_multiplier.n.01",
+        "acorn_tube.n.01",
+        "television-camera_tube.n.01",
+        "x-ray_tube.n.01",
+        "gas-discharge_tube.n.01",
+        "pentode.n.01",
+        "tetrode.n.01",
+        "triode.n.01",
+        "klystron.n.01",
+        "magnetron.n.01",
+        "diode.n.01"
+      ],
+      "part_holonyms": [
+        "circuit.n.01"
+      ],
+      "part_meronyms": [
+        "grid.n.04",
+        "cathode.n.01",
+        "anode.n.01",
+        "plate.n.10",
+        "electrode.n.01"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "relay.n.05",
+      "pos": "n",
+      "definition": "electrical device such that current flowing through it in one circuit can switch on and off a current in a second circuit",
+      "examples": [],
+      "lemmas": [
+        "relay",
+        "electrical_relay"
+      ],
+      "hypernyms": [
+        "electrical_device.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [
+        "circuit.n.01"
+      ],
+      "part_meronyms": [
+        "electromagnet.n.01"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "capacitor.n.01",
+      "pos": "n",
+      "definition": "an electrical device characterized by its capacity to store an electric charge",
+      "examples": [],
+      "lemmas": [
+        "capacitor",
+        "capacitance",
+        "condenser",
+        "electrical_condenser"
+      ],
+      "hypernyms": [
+        "electrical_device.n.01"
+      ],
+      "hyponyms": [
+        "electrolytic.n.01",
+        "leiden_jar.n.01",
+        "trimmer.n.03",
+        "bypass_condenser.n.01"
+      ],
+      "part_holonyms": [
+        "distributor.n.04",
+        "circuit.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "journey.n.01",
+      "pos": "n",
+      "definition": "the act of traveling from one place to another",
+      "examples": [],
+      "lemmas": [
+        "journey",
+        "journeying"
+      ],
+      "hypernyms": [
+        "travel.n.01"
+      ],
+      "hyponyms": [
+        "trip.n.01",
+        "way.n.07",
+        "excursion.n.01",
+        "passage.n.05",
+        "odyssey.n.01",
+        "mush.n.04",
+        "long_haul.n.01",
+        "digression.n.03",
+        "trek.n.01",
+        "commute.n.01",
+        "schlep.n.02",
+        "voyage.n.02",
+        "expedition.n.03",
+        "tour.n.01",
+        "drive.n.08",
+        "pilgrimage.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [
+        "stage.n.06"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "package_tour.n.01",
+      "pos": "n",
+      "definition": "a tour arranged by a travel agent; transportation and food and lodging are all provided at an inclusive price",
+      "examples": [],
+      "lemmas": [
+        "package_tour",
+        "package_holiday"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "grand_tour.n.01",
+      "pos": "n",
+      "definition": "an extended cultural tour of Europe taken by wealthy young Englishmen (especially in the 18th century) as part of their education",
+      "examples": [],
+      "lemmas": [
+        "grand_tour"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "pub_crawl.n.01",
+      "pos": "n",
+      "definition": "a tour of bars or public houses (usually taking one drink at each stop)",
+      "examples": [],
+      "lemmas": [
+        "pub_crawl"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "itineration.n.01",
+      "pos": "n",
+      "definition": "journeying from place to place preaching or lecturing; a preaching tour or lecturing tour",
+      "examples": [],
+      "lemmas": [
+        "itineration"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "walkabout.n.01",
+      "pos": "n",
+      "definition": "a walking trip or tour",
+      "examples": [],
+      "lemmas": [
+        "walkabout"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "grand_tour.n.02",
+      "pos": "n",
+      "definition": "a sightseeing tour of a building or institution",
+      "examples": [],
+      "lemmas": [
+        "grand_tour"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "whistle-stop_tour.n.01",
+      "pos": "n",
+      "definition": "a tour by a candidate as part of a political campaign in which a series of small towns are visited",
+      "examples": [
+        "in 1948 Truman crossed the country several times on his whistle-stop tours"
+      ],
+      "lemmas": [
+        "whistle-stop_tour"
+      ],
+      "hypernyms": [
+        "tour.n.01"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [
+        "campaigning.n.01"
+      ],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "path.n.03",
+      "pos": "n",
+      "definition": "an established line of travel or access",
+      "examples": [],
+      "lemmas": [
+        "path",
+        "route",
+        "itinerary"
+      ],
+      "hypernyms": [
+        "line.n.11"
+      ],
+      "hyponyms": [
+        "fairway.n.02",
+        "line_of_fire.n.01",
+        "circuit.n.03",
+        "beeline.n.01",
+        "crosscut.n.01",
+        "line_of_flight.n.01",
+        "bus_route.n.01",
+        "line_of_march.n.01",
+        "migration_route.n.01",
+        "air_lane.n.01",
+        "supply_line.n.01",
+        "flight_path.n.01",
+        "traffic_pattern.n.01",
+        "direction.n.01",
+        "trade_route.n.02",
+        "orbit.n.04",
+        "beat.n.01",
+        "feeder_line.n.01",
+        "paper_route.n.01",
+        "track.n.07",
+        "main_line.n.01",
+        "orbit.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "boundary_line.n.01",
+      "pos": "n",
+      "definition": "a line that indicates a boundary",
+      "examples": [],
+      "lemmas": [
+        "boundary_line",
+        "border",
+        "borderline",
+        "delimitation",
+        "mete"
+      ],
+      "hypernyms": [
+        "boundary.n.01"
+      ],
+      "hyponyms": [
+        "circumference.n.02",
+        "fence_line.n.01",
+        "property_line.n.01",
+        "state_line.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "group.n.01",
+      "pos": "n",
+      "definition": "any number of entities (members) considered as a unit",
+      "examples": [],
+      "lemmas": [
+        "group",
+        "grouping"
+      ],
+      "hypernyms": [
+        "abstraction.n.06"
+      ],
+      "hyponyms": [
+        "kingdom.n.06",
+        "actinoid.n.01",
+        "race.n.03",
+        "arrangement.n.02",
+        "population.n.02",
+        "electron_shell.n.01",
+        "community.n.06",
+        "multitude.n.03",
+        "system.n.02",
+        "collection.n.01",
+        "subgroup.n.01",
+        "series.n.06",
+        "edition.n.02",
+        "biological_group.n.01",
+        "association.n.08",
+        "circuit.n.05",
+        "rare_earth.n.01",
+        "people.n.01",
+        "citizenry.n.01",
+        "swarm.n.02",
+        "social_group.n.01",
+        "straggle.n.01",
+        "varna.n.02",
+        "ethnic_group.n.01",
+        "world.n.08",
+        "halogen.n.01",
+        "sainthood.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "racetrack.n.01",
+      "pos": "n",
+      "definition": "a course over which races are run",
+      "examples": [],
+      "lemmas": [
+        "racetrack",
+        "racecourse",
+        "raceway",
+        "track"
+      ],
+      "hypernyms": [
+        "course.n.09"
+      ],
+      "hyponyms": [
+        "speedway.n.02",
+        "cinder_track.n.01",
+        "dirt_track.n.01",
+        "velodrome.n.01",
+        "racing_circuit.n.01"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [
+        "inside_track.n.02",
+        "stretch.n.03"
+      ],
+      "also_sees": []
+    },
+    {
+      "name": "locomotion.n.02",
+      "pos": "n",
+      "definition": "self-propelled movement",
+      "examples": [],
+      "lemmas": [
+        "locomotion",
+        "travel"
+      ],
+      "hypernyms": [
+        "motion.n.06"
+      ],
+      "hyponyms": [
+        "walk.n.01",
+        "dance_step.n.01",
+        "step.n.03",
+        "crawl.n.03",
+        "stroke.n.11",
+        "jog.n.02",
+        "run.n.07",
+        "brachiation.n.01",
+        "gait.n.02",
+        "lap.n.05"
+      ],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "pace_lap.n.01",
+      "pos": "n",
+      "definition": "the first lap of a car race that prepares the cars for a fast start",
+      "examples": [],
+      "lemmas": [
+        "pace_lap"
+      ],
+      "hypernyms": [
+        "lap.n.05"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    },
+    {
+      "name": "victory_lap.n.01",
+      "pos": "n",
+      "definition": "a lap by the winning person or team run to celebrate the victory",
+      "examples": [],
+      "lemmas": [
+        "victory_lap",
+        "lap_of_honour"
+      ],
+      "hypernyms": [
+        "lap.n.05"
+      ],
+      "hyponyms": [],
+      "part_holonyms": [],
+      "part_meronyms": [],
+      "also_sees": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "circuit.n.01",
+      "target": "bridge.n.02",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "bridged-t.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "capacitor.n.01",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "choke.n.01",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "closed_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "computer_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "delay_line.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "electrical_device.n.01",
+      "relation": "hypernym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "electronic_equipment.n.01",
+      "relation": "part_holonym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "feedback_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "flip-flop.n.03",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "limiter.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "link.n.09",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "open_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "pulse_timing_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "relay.n.05",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "resistor.n.01",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "resonator.n.02",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "series_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "short_circuit.n.01",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "shunt.n.02",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "squelch_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "t-network.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "tank_circuit.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "tube.n.02",
+      "relation": "part_meronym"
+    },
+    {
+      "source": "circuit.n.01",
+      "target": "wiring.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "circuit.n.03",
+      "target": "path.n.03",
+      "relation": "hypernym"
+    },
+    {
+      "source": "circuit.n.05",
+      "target": "group.n.01",
+      "relation": "hypernym"
+    },
+    {
+      "source": "circumference.n.02",
+      "target": "boundary_line.n.01",
+      "relation": "hypernym"
+    },
+    {
+      "source": "lap.n.05",
+      "target": "locomotion.n.02",
+      "relation": "hypernym"
+    },
+    {
+      "source": "lap.n.05",
+      "target": "pace_lap.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "lap.n.05",
+      "target": "victory_lap.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "racing_circuit.n.01",
+      "target": "racetrack.n.01",
+      "relation": "hypernym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "grand_tour.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "grand_tour.n.02",
+      "relation": "hyponym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "itineration.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "journey.n.01",
+      "relation": "hypernym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "package_tour.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "pub_crawl.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "walkabout.n.01",
+      "relation": "hyponym"
+    },
+    {
+      "source": "tour.n.01",
+      "target": "whistle-stop_tour.n.01",
+      "relation": "hyponym"
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "word": "circuit",
+  "anchor_radius": 5.0,
+  "anchors": [
+    "circuit.n.01",
+    "circuit.n.03",
+    "circuit.n.05",
+    "circumference.n.02",
+    "lap.n.05",
+    "racing_circuit.n.01",
+    "tour.n.01"
+  ],
+  "node_count": 48,
+  "nodes": [
+    {
+      "name": "circuit.n.01",
+      "x": -3.5694492889658456,
+      "y": 2.6217158474584306,
+      "z": -2.32069769437696,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "tour.n.01",
+      "x": 4.996135368350206,
+      "y": 0.1965486736667441,
+      "z": -1.6768253681158814e-16,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "circuit.n.03",
+      "x": -4.027106036911676,
+      "y": -2.9635142934478207,
+      "z": -2.420630806603254e-14,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "circumference.n.02",
+      "x": -3.2075025523444607,
+      "y": -3.8356130379254587,
+      "z": 8.559074503891375e-15,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "circuit.n.05",
+      "x": 4.917732579712778,
+      "y": -0.9032753037870049,
+      "z": 1.615445679961703e-14,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "racing_circuit.n.01",
+      "x": -3.5694492889658425,
+      "y": 2.6217158474584297,
+      "z": 2.3206976943769653,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "lap.n.05",
+      "x": 4.9966588884163015,
+      "y": 0.18275653971984687,
+      "z": 1.166554410476084e-15,
+      "type": "anchor",
+      "parent": null,
+      "relation": null,
+      "size": 0.14
+    },
+    {
+      "name": "electrical_device.n.01",
+      "x": -3.8550052320831134,
+      "y": 2.831453115255105,
+      "z": -2.506353509927117,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "closed_circuit.n.01",
+      "x": -3.6737890920885143,
+      "y": 1.6733421746293526,
+      "z": -3.2316007630633075,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "flip-flop.n.03",
+      "x": -4.566786138400476,
+      "y": 1.6680826343811073,
+      "z": -1.864029855539433,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "tank_circuit.n.01",
+      "x": -2.5211899321059565,
+      "y": 3.496769274696878,
+      "z": -2.9444614796984707,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "computer_circuit.n.01",
+      "x": -3.876567033006928,
+      "y": 1.6254520537171013,
+      "z": -2.9738113536342374,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "delay_line.n.01",
+      "x": -4.213477090518587,
+      "y": 1.2686829708907188,
+      "z": -2.858657963535729,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "wiring.n.01",
+      "x": -2.5718380010135498,
+      "y": 2.9532113470814125,
+      "z": -3.480622963508397,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "bridge.n.02",
+      "x": -2.828140359512194,
+      "y": 2.6217158474584306,
+      "z": -3.460899900615959,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "bridged-t.n.01",
+      "x": -2.932172164097983,
+      "y": 2.2993543171811925,
+      "z": -3.665064399412261,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "squelch_circuit.n.01",
+      "x": -2.8780965029217276,
+      "y": 3.5762868972744704,
+      "z": -2.3056740494004995,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "feedback_circuit.n.01",
+      "x": -4.47679980879432,
+      "y": 1.5117896197117966,
+      "z": -2.179003027360144,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "t-network.n.01",
+      "x": -2.649417984945327,
+      "y": 3.6190346595494014,
+      "z": -2.60911033466044,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "limiter.n.01",
+      "x": -4.367887871545468,
+      "y": 2.0503142512013985,
+      "z": -1.73814296784909,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "series_circuit.n.01",
+      "x": -3.3418326485613665,
+      "y": 3.6802147638929155,
+      "z": -1.474996277410538,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "resonator.n.02",
+      "x": -3.582645678415564,
+      "y": 3.6136175782302513,
+      "z": -1.1798389190012455,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "pulse_timing_circuit.n.01",
+      "x": -4.203529159566181,
+      "y": 2.761045460375095,
+      "z": -1.188021687573112,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "open_circuit.n.01",
+      "x": -4.309572404496892,
+      "y": 2.4891594531013337,
+      "z": -1.3320696907077945,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "link.n.09",
+      "x": -4.631385363823475,
+      "y": 2.1238696547300733,
+      "z": -1.2497629835454382,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "electronic_equipment.n.01",
+      "x": -4.182299896460152,
+      "y": 1.661698688475648,
+      "z": -2.462617529593914,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_holonym",
+      "size": 0.05
+    },
+    {
+      "name": "shunt.n.02",
+      "x": -2.8127585716273007,
+      "y": 3.981359291781337,
+      "z": -1.9485554614632223,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "resistor.n.01",
+      "x": -3.774397251321563,
+      "y": 3.1835110126687294,
+      "z": -1.3708029056225783,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "choke.n.01",
+      "x": -3.419996221265098,
+      "y": 1.7182018503611445,
+      "z": -3.571279412909595,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "short_circuit.n.01",
+      "x": -3.177864479966624,
+      "y": 3.6152082166243846,
+      "z": -1.8006331579904895,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "tube.n.02",
+      "x": -2.7940105098033383,
+      "y": 3.083103967385057,
+      "z": -2.9921599261243896,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "relay.n.05",
+      "x": -4.106981537733202,
+      "y": 3.110143476148658,
+      "z": -0.9421413380776271,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "capacitor.n.01",
+      "x": -3.271432257907423,
+      "y": 2.1619126353815576,
+      "z": -3.2985200332898486,
+      "type": "satellite",
+      "parent": "circuit.n.01",
+      "relation": "part_meronym",
+      "size": 0.05
+    },
+    {
+      "name": "journey.n.01",
+      "x": 5.395826197818223,
+      "y": 0.21227256756008364,
+      "z": -1.810971397565152e-16,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "package_tour.n.01",
+      "x": 5.010675873002761,
+      "y": -0.17306119554797167,
+      "z": -0.7680964838049418,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "grand_tour.n.01",
+      "x": 4.996135368350206,
+      "y": 0.1965486736667441,
+      "z": 0.7479999999999998,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "pub_crawl.n.01",
+      "x": 4.983761192905056,
+      "y": 0.511091908389917,
+      "z": -0.6536609888388841,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "itineration.n.01",
+      "x": 5.019761576674688,
+      "y": -0.40401368489740763,
+      "z": -0.13718046970361517,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "walkabout.n.01",
+      "x": 4.970204617902777,
+      "y": 0.8556909462720983,
+      "z": -0.15056129520620323,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "grand_tour.n.02",
+      "x": 5.021867324176811,
+      "y": -0.45754037310089424,
+      "z": 0.5220220933774412,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "whistle-stop_tour.n.01",
+      "x": 4.969222877775636,
+      "y": 0.8806461213960541,
+      "z": 0.5459715057186728,
+      "type": "satellite",
+      "parent": "tour.n.01",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "path.n.03",
+      "x": -4.34927451986461,
+      "y": -3.2005954369236465,
+      "z": -2.6142812711315144e-14,
+      "type": "satellite",
+      "parent": "circuit.n.03",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "boundary_line.n.01",
+      "x": -3.4641027565320175,
+      "y": -4.142462080959495,
+      "z": 9.243800464202686e-15,
+      "type": "satellite",
+      "parent": "circumference.n.02",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "group.n.01",
+      "x": 5.3111511860898,
+      "y": -0.9755373280899653,
+      "z": 1.7446813343586392e-14,
+      "type": "satellite",
+      "parent": "circuit.n.05",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "racetrack.n.01",
+      "x": -3.85500523208311,
+      "y": 2.831453115255104,
+      "z": 2.5063535099271226,
+      "type": "satellite",
+      "parent": "racing_circuit.n.01",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "locomotion.n.02",
+      "x": 5.396391599489606,
+      "y": 0.19737706289743462,
+      "z": 1.2598787633141708e-15,
+      "type": "satellite",
+      "parent": "lap.n.05",
+      "relation": "hypernym",
+      "size": 0.04000000000000001
+    },
+    {
+      "name": "pace_lap.n.01",
+      "x": 4.9966588884163015,
+      "y": 0.18275653971984687,
+      "z": 0.5780000000000012,
+      "type": "satellite",
+      "parent": "lap.n.05",
+      "relation": "hyponym",
+      "size": 0.05
+    },
+    {
+      "name": "victory_lap.n.01",
+      "x": 4.9966588884163015,
+      "y": 0.1827565397198468,
+      "z": -0.6469724241140462,
+      "type": "satellite",
+      "parent": "lap.n.05",
+      "relation": "hyponym",
+      "size": 0.05
+    }
+  ]
+}
