@@ -1,21 +1,30 @@
-// main.js — entry point. Boots the sphere and the table.
-
-import { renderTable } from './table.js';
-import './sphere.js';
+// main.js — entry point. Fetch data first, then boot sphere and table.
 
 async function boot() {
-  // Load both data files
   const [layout, graph] = await Promise.all([
-    fetch('./data/circuit-layout.json').then(r => r.json()),
-    fetch('./data/circuit-graph.json').then(r => r.json()),
+    fetch('./data/circuit-layout.json').then(r => {
+      if (!r.ok) throw new Error(`layout: ${r.status}`);
+      return r.json();
+    }),
+    fetch('./data/circuit-graph.json').then(r => {
+      if (!r.ok) throw new Error(`graph: ${r.status}`);
+      return r.json();
+    }),
   ]);
 
-  // Render the table below the sphere
+  window.__CIRCUIT_DATA__ = { layout, graph };
+
+  const { renderTable } = await import('./table.js');
+  await import('./sphere.js');
+
   const tableEl = document.getElementById('table-section');
   if (tableEl) renderTable(tableEl, layout, graph);
-
-  // Make layout + graph globally available to sphere.js
-  window.__CIRCUIT_DATA__ = { layout, graph };
 }
 
-boot();
+boot().catch(err => {
+  console.error('Boot failed:', err);
+  const el = document.getElementById('canvas-container');
+  if (el) {
+    el.innerHTML = `<pre style="color:#d9a441;padding:40px;font-family:monospace;font-size:12px;white-space:pre-wrap;">Boot failed:\n${err.message}\n\nStack:\n${err.stack || '(none)'}\n\nOpen console for details.</pre>`;
+  }
+});
